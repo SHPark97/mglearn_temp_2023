@@ -12,7 +12,7 @@ def plot_tree_not_monotone():
     y = y % 2
     plt.figure()
     discrete_scatter(X[:, 0], X[:, 1], y)
-    plt.legend(["클래스 0", "클래스 1"], loc="best")
+    plt.legend(["Class 0", "Class 1"], loc="best")
     plt.xlabel("X[0]")
     plt.ylabel("X[1]")
 

@@ -22,8 +22,8 @@ def plot_nmf_illustration():
     axes[0].set_xlim([0, 12])
     axes[0].set_ylim([0, 12])
     axes[0].scatter(X_blob[:, 0], X_blob[:, 1], c=X_nmf[:, 0], linewidths=0, s=60, cmap='viridis')
-    axes[0].set_xlabel("특성 1")
-    axes[0].set_ylabel("특성 2")
+    axes[0].set_xlabel("Feature 1")
+    axes[0].set_ylabel("Feature 2")
     axes[0].arrow(0, 0, nmf.components_[0, 0], nmf.components_[0, 1], width=.1,
                   head_width=.3, color='k')
     axes[0].arrow(0, 0, nmf.components_[1, 0], nmf.components_[1, 1], width=.1,
@@ -39,8 +39,8 @@ def plot_nmf_illustration():
     axes[1].set_ylim([0, 12])
     axes[1].scatter(X_blob[:, 0], X_blob[:, 1], c=X_nmf[:, 0], linewidths=0,
                     s=60, cmap='viridis')
-    axes[1].set_xlabel("특성 1")
-    axes[1].set_ylabel("특성 2")
+    axes[1].set_xlabel("Feature 1")
+    axes[1].set_ylabel("Feature 2")
     axes[1].arrow(0, 0, nmf.components_[0, 0], nmf.components_[0, 1], width=.1,
                   head_width=.3, color='k')
 
