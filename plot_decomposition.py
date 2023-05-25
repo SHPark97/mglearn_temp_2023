@@ -26,6 +26,6 @@ def plot_decomposition(people, pca):
 
     plt.text(.95, .25, '+ ...', fontdict={'fontsize': 50})
 
-    plt.rc('text', usetex=True)
+    plt.rc('font', family='NanumBarunGothic') 
     plt.text(.13, .3, r'\approx', fontdict={'fontsize': 50})
     plt.axis("off")
